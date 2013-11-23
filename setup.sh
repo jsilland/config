@@ -2,8 +2,13 @@
 
 # First things first
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool NO
+chsh -s /bin/zsh
+
+# Oh-My-ZSH
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/src/oh-my-zsh
 
 # Dotfiles
+ln -s ~/src/config/dotfiles/zshrc ~/.zshrc
 ln -s ~/src/config/dotfiles/gitconfig ~/.gitconfig
 mkdir ~/.m2
 ln -s ~/src/config/dotfiles/m2/toolchains.xml ~/.m2/toolchains.xml
