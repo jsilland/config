@@ -4,3 +4,4 @@
 
 brew install protobuf
 brew install maven
+brew install gradle
