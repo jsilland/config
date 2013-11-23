@@ -1,0 +1,11 @@
+<toolchains>
+  <toolchain>
+    <type>protobuf</type>
+    <provides>
+      <version>2.5.0</version>
+    </provides>
+    <configuration>
+      <protocExecutable>/usr/local/bin/protoc</protocExecutable>
+    </configuration>
+  </toolchain>
+</toolchains>
