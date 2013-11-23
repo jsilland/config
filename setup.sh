@@ -11,6 +11,9 @@ chsh -s /bin/zsh
 # Install Brew
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 
+# System config
+~/src/config/dock.sh
+
 # Application installs
 ~/src/config/build_tools.sh
 ~/src/config/chrome.sh
@@ -18,4 +21,4 @@ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 ~/src/config/vim.sh
 ~/src/config/intellij.sh
 ~/src/config/quicksilver.sh
-~/src/config/dock.sh
+~/src/config/vlc.sh
