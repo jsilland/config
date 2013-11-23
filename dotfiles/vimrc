@@ -3,3 +3,9 @@ colorscheme Tomorrow-Night
 if has('gui_running')
   set guifont=Source\ Code\ Pro:h13
 endif
+
+:set tabstop=2
+:set shiftwidth=2
+:set expandtab
+:set ruler
+:set number
