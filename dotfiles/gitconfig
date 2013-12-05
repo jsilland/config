@@ -7,3 +7,14 @@
 	ui = true
 [core]
 	excludesfile = ~/.gitignore
+[alias]
+	br = branch 
+	cl = clone
+	ci = commit
+	co = checkout
+	cp = cherry-pick
+	dc = diff --cached
+	diff = diff --word-diff
+	fl = log -u
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	st = status -s
