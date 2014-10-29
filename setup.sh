@@ -9,7 +9,7 @@ chsh -s /bin/zsh
 ~/src/config/dotfiles.sh
 
 # Install Brew
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # System config
 ~/src/config/dock.sh
@@ -22,3 +22,4 @@ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 ~/src/config/intellij.sh
 ~/src/config/quicksilver.sh
 ~/src/config/vlc.sh
+~/src/config/textmate.sh
