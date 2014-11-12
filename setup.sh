@@ -23,3 +23,4 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 ~/src/config/quicksilver.sh
 ~/src/config/vlc.sh
 ~/src/config/textmate.sh
+~/src/config/jekyll.sh
