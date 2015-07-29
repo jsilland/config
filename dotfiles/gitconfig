@@ -2,7 +2,7 @@
 	name = Julien Silland
 	email = julien@soliton.io
 [push]
-	default = simple
+	default = upstream
 [color]
 	ui = true
 [core]
