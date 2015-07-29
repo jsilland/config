@@ -11,16 +11,14 @@ chsh -s /bin/zsh
 # Install Brew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# Install Cask
+brew install caskroom/cask/brew-cask
+
 # System config
 ~/src/config/dock.sh
 
 # Application installs
 ~/src/config/build_tools.sh
-~/src/config/chrome.sh
+~/src/config/casks.sh
 ~/src/config/source_font.sh
-~/src/config/vim.sh
-~/src/config/intellij.sh
-~/src/config/quicksilver.sh
-~/src/config/vlc.sh
-~/src/config/textmate.sh
 ~/src/config/jekyll.sh
