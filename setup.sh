@@ -20,3 +20,4 @@ brew install caskroom/cask/brew-cask
 ~/src/config/jekyll.sh
 ~/src/config/settings.sh
 ~/src/config/vim.sh
+~/src/config/tools.sh

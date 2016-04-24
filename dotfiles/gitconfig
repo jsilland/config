@@ -1,22 +1,22 @@
 [user]
-	name = Julien Silland
-	email = julien@soliton.io
+  name = Julien Silland
+  email = julien@soliton.io
 [push]
-	default = upstream
+  default = upstream
 [color]
-	ui = true
+  ui = true
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
 [alias]
-	br = branch 
-	cl = clone
-	ci = commit
-	co = checkout
-	cp = cherry-pick
-	dc = diff --cached
-	diff = diff --word-diff
-	fl = log -u
-	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-	rb = "!sh -c 'git co master && git pull --rebase && git co - && git rebase master'"
-	st = status -s
+  br = branch 
+  cl = clone
+  ci = commit
+  co = checkout
+  cp = cherry-pick
+  dc = diff --cached
+  diff = diff --word-diff
+  fl = log -u
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  rb = "!sh -c 'git co master && git pull --rebase && git co - && git rebase master'"
+  st = status -s
   sn = log --author=$USER --no-merges --since="1 week ago" --format=format:"%h %s"
