@@ -2,4 +2,4 @@
 
 # Installs Jekyll
 
-gem install jekyll
+sudo gem install jekyll
