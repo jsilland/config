@@ -7,4 +7,7 @@
 
 mkdir ~/src
 git clone https://github.com/jsilland/config ~/src/config
+cd ~/src/config
+git submodule init
+git submodule update
 ~/src/config/setup.sh

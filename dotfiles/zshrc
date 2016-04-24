@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/src/oh-my-zsh
+ZSH=$HOME/src/config/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -23,4 +23,14 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
+export PATH="$HOME/src/config/bin:$PATH"
+
 source $ZSH/oh-my-zsh.sh
+
+echo 'Evaluating Run Commands Files'
+
+RC_FILES_PATH=$HOME/.rc
+for c in `ls $RC_FILES_PATH`; do
+  echo "Evaluating $c"
+  source $RC_FILES_PATH/$c
+done

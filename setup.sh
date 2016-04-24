@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# First things first
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool NO
-chsh -s /bin/zsh
-
 # Core stuff
 ~/src/config/dependencies.sh
 ~/src/config/dotfiles.sh
@@ -20,5 +16,7 @@ brew install caskroom/cask/brew-cask
 # Application installs
 ~/src/config/build_tools.sh
 ~/src/config/casks.sh
-~/src/config/source_font.sh
+~/src/config/fonts.sh
 ~/src/config/jekyll.sh
+~/src/config/settings.sh
+~/src/config/vim.sh

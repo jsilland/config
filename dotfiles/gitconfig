@@ -17,4 +17,6 @@
 	diff = diff --word-diff
 	fl = log -u
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	rb = "!sh -c 'git co master && git pull --rebase && git co - && git rebase master'"
 	st = status -s
+  sn = log --author=$USER --no-merges --since="1 week ago" --format=format:"%h %s"

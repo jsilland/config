@@ -1,0 +1,9 @@
+[submodule "fonts"]
+	path = fonts
+	url = git@github.com:google/fonts.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = git://github.com/robbyrussell/oh-my-zsh.git
+[submodule "tomorrow-theme"]
+	path = tomorrow-theme
+	url = git://github.com/chriskempson/tomorrow-theme
