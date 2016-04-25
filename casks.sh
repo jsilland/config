@@ -8,3 +8,7 @@ brew cask install intellij-idea-ce
 brew cask install rubymine
 brew cask install webstorm
 brew cask install firefox
+brew cask install transmission
+brew cask install handbrake
+brew cask install macdown
+

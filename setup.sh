@@ -8,7 +8,8 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install Cask
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
+brew tap caskroom/versions
 
 # System config
 ~/src/config/dock.sh
