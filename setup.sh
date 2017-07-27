@@ -26,3 +26,5 @@ brew tap caskroom/versions
 # At the very end, switch the remote of this repository to the SSH origin
 cd ~/src/config
 git remote set-url origin git@github.com:jsilland/config.git
+echo "Remote URL of the ~/src/config repository switched to SSH"
+echo "Make sure to install your SSH keys in ~/.ssh"
