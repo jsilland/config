@@ -12,3 +12,4 @@ brew cask install transmission
 brew cask install handbrake
 brew cask install macdown
 brew cask install atom
+brew cask install 1password

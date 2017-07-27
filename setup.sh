@@ -22,3 +22,7 @@ brew tap caskroom/versions
 ~/src/config/settings.sh
 ~/src/config/vim.sh
 ~/src/config/tools.sh
+
+# At the very end, switch the remote of this repository to the SSH origin
+cd ~/src/config
+git remote set-url origin git@github.com:jsilland/config.git
