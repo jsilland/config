@@ -20,3 +20,6 @@
   rb = "!sh -c 'git co master && git pull --rebase && git co - && git rebase master'"
   st = status -s
   sn = log --author=$USER --no-merges --since="1 week ago" --format=format:"%h %s"
+  lnf = !git log --invert-grep --grep='^fixup!' -n 1 --format=format:%H
+  fix = !git commit --fixup `git lnf`
+  fp = "!sh -c 'git fix && git push'"
