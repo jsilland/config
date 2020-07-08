@@ -22,7 +22,7 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
-export PATH="$HOME/src/config/bin:$PATH"
+PATH="$HOME/src/config/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
