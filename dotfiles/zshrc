@@ -5,7 +5,8 @@ ZSH=$HOME/src/config/oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="sunrise"
+ZSH_THEME="zsh2001"
+ZSH_2000_DISABLE_RVM='true'
 
 # Uncomment this to disable bi-weekly auto-update checks
 DISABLE_AUTO_UPDATE="true"
@@ -29,7 +30,6 @@ RC_FILES_PATH=$HOME/.rc
 if [ -d $RC_FILES_PATH ]
 then
   for c in `ls $RC_FILES_PATH`; do
-    echo "Evaluating $c"
     source $RC_FILES_PATH/$c
   done
 fi
