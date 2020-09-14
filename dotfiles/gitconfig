@@ -2,13 +2,13 @@
   name = Julien Silland
   email = julien@soliton.io
 [push]
-  default = upstream
+	default = current
 [color]
   ui = true
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore
 [alias]
-  br = branch 
+  br = branch
   cl = clone
   ci = commit
   co = checkout
@@ -17,6 +17,19 @@
   diff = diff --word-diff
   fl = log -u
   ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-  rb = "!sh -c 'git co master && git pull --rebase && git co - && git rebase master'"
+  sq = "!sh -c 'CURRENT_BRANCH=`git rev-parse --abbrev-ref HEAD`; LAST_COMMON_ANCESTOR=`git merge-base $CURRENT_BRANCH master`; git rebase -i --autosquash $LAST_COMMON_ANCESTOR'"
+  rb = "!sh -c 'git sq && git co master && git pull --rebase && git co - && git rebase master'"
   st = status -s
   sn = log --author=$USER --no-merges --since="1 week ago" --format=format:"%h %s"
+  lnf = !git log --invert-grep --grep='^fixup!' -n 1 --format=format:%H
+  fix = !git commit --fixup `git lnf`
+  fp = "!sh -c 'git fix && git push'"
+  wip = "!sh -c 'git add . && git commit -m wip --no-verify'"
+  lf = "!sh -c 'git branch --format=\"%(objectname:short) %(refname:short) %(subject)\" --sort=-committerdate | grep wip'"
+  rc = "!sh -c 'git diff --name-only --diff-filter=U | xargs gvim'"
+  ra = "!sh -c 'git diff --name-only --diff-filter=U | xargs git add'"
+  git = !exec git
+[credential]
+	helper = store
+[url "https://user@hostname"]
+	insteadOf = ssh://git@hostname

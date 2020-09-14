@@ -9,3 +9,8 @@ defaults write com.apple.dock largesize -int 81
 
 # Forces the Dock to restart 
 killall Dock
+
+# Other mac stuff
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool NO
+defaults write -g ApplePressAndHoldEnabled -bool true
+defaults write NSGlobalDomain AppleInterfaceStyle Dark
