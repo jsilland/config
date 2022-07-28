@@ -5,7 +5,7 @@ ZSH=$HOME/src/config/oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="zsh2001"
+ZSH_THEME=""
 ZSH_2000_DISABLE_RVM='true'
 
 # Uncomment this to disable bi-weekly auto-update checks
@@ -25,6 +25,10 @@ plugins=(git)
 PATH="$HOME/src/config/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
+
+fpath+=$HOME/src/config/pure
+autoload -U promptinit; promptinit
+prompt pure
 
 RC_FILES_PATH=$HOME/.rc
 if [ -d $RC_FILES_PATH ]
