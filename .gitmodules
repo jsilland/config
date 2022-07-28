@@ -8,3 +8,6 @@
 [submodule "tomorrow-theme"]
 	path = tomorrow-theme
 	url = https://github.com/chriskempson/tomorrow-theme
+[submodule "pure"]
+	path = pure
+	url = https://github.com/sindresorhus/pure.git
