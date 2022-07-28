@@ -24,6 +24,7 @@
   lnf = !git log --invert-grep --grep='^fixup!' -n 1 --format=format:%H
   fix = !git commit --fixup `git lnf`
   fp = "!sh -c 'git fix && git push'"
+  afp = "!sh -c 'git add . && git fix && git push'"
   wip = "!sh -c 'git add . && git commit -m wip --no-verify'"
   lf = "!sh -c 'git branch --format=\"%(objectname:short) %(refname:short) %(subject)\" --sort=-committerdate | grep wip'"
   rc = "!sh -c 'git diff --name-only --diff-filter=U | xargs gvim'"
